@@ -1,0 +1,25 @@
+
+"""
+import pandas as pd
+df = pd.read_csv("Superstore.csv")
+print(df.head())
+"""
+
+
+
+
+"""
+import chardet
+archivo = 'Superstore.csv'
+
+# Lee los primeros bytes del archivo para determinar la codificación
+with open(archivo, 'rb') as f:
+    rawdata = f.read()
+
+# Utiliza chardet para identificar la codificación
+result = chardet.detect(rawdata)
+
+# Imprime la codificación detectada y su confianza
+print("Codificación detectada:", result['encoding'])
+print("Confianza:", result['confidence'])
+"""
